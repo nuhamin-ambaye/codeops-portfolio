@@ -1,0 +1,3 @@
+Paracetamol,20
+Amoxicillin,6
+ORS,35
