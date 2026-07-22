@@ -1,7 +1,7 @@
 def splitBill(people, TotalBill):
-    for i in range(1, People):
-        return TotalBill/People
-    
+    for i in range(0, people):
+       return f"Every person pays {TotalBill/people} ETB."
+
 People=4
 TotalBill=1000
-splitBill(People, TotalBill)
+print(splitBill(People, TotalBill))

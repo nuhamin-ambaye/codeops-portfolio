@@ -31,4 +31,5 @@ city_set=set()
 print(city_set)
 
 #import math
-#from math import pow     #executionachin lay load endaynor yadergal minfelgewin bicha metratachin
+#from math import pow     
+#executionachin lay load endaynor yadergal minfelgewin bicha metratachin

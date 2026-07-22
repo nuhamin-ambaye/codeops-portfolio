@@ -1,4 +1,4 @@
-#1. Temprature label
+7#1. Temprature label
 
 tempr=input("Enter temprature in celcius: ")
 temp=int(tempr)
