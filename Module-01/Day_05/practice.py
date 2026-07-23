@@ -1,4 +1,4 @@
-#1. Vehicle hierarchy
+#1. Vehicle hierarchy 
 
 class Vehicle:
     def __init__(self, make, model):

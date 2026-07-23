@@ -45,7 +45,6 @@ with open("names.txt", "r") as f:
 
 #6. Safe division
 
-
 try:
     divisor=input("Enter a number to divide 1000: ")
     number=float(divisor)

@@ -1,5 +1,5 @@
 #collections
-#lists
+#lists 
 
 cities=["Addis Ababa", "Adama", "Hawassa", "Bahir Dar"]
 cities[0]="Adama"

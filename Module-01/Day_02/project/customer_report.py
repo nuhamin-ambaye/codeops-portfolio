@@ -6,7 +6,7 @@ def tier(balance):
     if balance >= 1000:
         return "Premium"
     elif balance >= 500:
-        return "Standard"
+        return "Standard" 
     return "Basic"
 
 for name, balance in customers:

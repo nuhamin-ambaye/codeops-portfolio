@@ -16,7 +16,7 @@ else:
     print(f"The wanted result is {wanted}")
 
 
-#Binary search
+#Binary search 
 def binarySearch(array, target):
     left=0
     right=array[len(array)-1]

@@ -8,7 +8,7 @@ class ReportSaver:
     def save_to_file(self, content, filename):
         return f"Saved report to {filename}"
     
-class EmailReporter:
+class EmailReporter: 
     def send_email(self, content, recipent):
         return f"Emailed report to {recipent}"
 

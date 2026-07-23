@@ -39,7 +39,7 @@ class Stack:
         return self.names.pop()
     
 names=["Jerry", "Nuhamin", "Bitaniya"]
-NStack=Stack()
+NStack=Stack() 
 
 for name in names:
     NStack.push(name)
