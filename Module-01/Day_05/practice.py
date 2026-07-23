@@ -15,7 +15,7 @@ class Truck(Vehicle):
     pass
 
 car1=Car("Toyota", "CHR")
-car1.describe()
+car1.describe() 
 
 #2. Using super
 

@@ -15,7 +15,7 @@ book2=Book("Anne Frank-Diary of young girl", "Anne Frank", 266)
 book1.describe()
 book2.describe()
 
-#2. Product class 
+#2. Product class
 
 class Product:
     def __init__(self, name, price, quantity):

@@ -28,7 +28,7 @@ def binarySearch(array, target):
             left=mid+1
         else:
             left=mid-1
-odds=[1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+odds=[1, 3, 5, 7, 9, 11, 13, 15, 17, 19] 
 we_wantt=17
 
 print(f"Found {binarySearch(odds, we_wantt)}.")

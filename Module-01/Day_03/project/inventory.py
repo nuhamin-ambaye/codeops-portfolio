@@ -15,7 +15,7 @@ adjust("Amoxicillin", 6)
 adjust("ORS", 35)
 
 low = [item for item, quantity in stock.items() if quantity < 10]
-print("Low stock:", low) 
+print("Low stock:", low)  
 
 with open("stock.txt", "w") as f:
     for item, quantity in stock.items():

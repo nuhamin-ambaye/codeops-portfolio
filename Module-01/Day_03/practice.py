@@ -49,7 +49,7 @@ try:
     divisor=input("Enter a number to divide 1000: ")
     number=float(divisor)
     quotient=1000/number
-    print(f"Quotient={quotient}")
+    print(f"Quotient={quotient}") 
 except ValueError:
     print("ERROR! \nPlease enter valid numeric value.")
 except ZeroDivisionError:

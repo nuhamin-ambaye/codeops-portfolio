@@ -14,7 +14,7 @@ class EmailReporter:
 
 #2. Refactor to OCP
 
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod 
 
 class Shape(ABC):
     @abstractmethod

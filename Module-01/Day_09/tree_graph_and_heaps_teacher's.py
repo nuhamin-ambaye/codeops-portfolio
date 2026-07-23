@@ -106,7 +106,7 @@ graph = {
 # BFS Traversal
 from collections import deque
 
-def bfs(graph, start_node):
+def bfs(graph, start_node): 
     visited = set()
     queue = deque([start_node])
     visited.add(start_node)

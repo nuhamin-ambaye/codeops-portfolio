@@ -29,7 +29,7 @@ class Account:
         self._observers=[]
         self.config=BankConfig()
 
-    def subscribe(self, observer):
+    def subscribe(self, observer): 
         if observer not in self._observers:
             self._observers.append(observer)
     def notify(self, message):

@@ -4,4 +4,4 @@ def splitBill(people, TotalBill):
 
 People=4
 TotalBill=1000
-print(splitBill(People, TotalBill)) 
+print(splitBill(People, TotalBill))

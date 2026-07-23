@@ -73,7 +73,7 @@ print("Match: ", merge_sort(test_list) == sorted(test_list))
 
 #4. Sort with a key
 
-def get_balance(account):
+def get_balance(account): 
     return account[1]
 
 users = [("Abebe", 450), ("Kebede", 120), ("Marta", 3500)]

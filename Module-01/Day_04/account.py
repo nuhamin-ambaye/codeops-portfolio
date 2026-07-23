@@ -11,7 +11,7 @@ class Account:
     def deposit(self, amount):
         if amount <= 0:
             raise ValueError("Amount must be positive")
-        self.__balance += amount
+        self.__balance += amount 
 
 #TODO 1: withdraw(amount)
 

@@ -7,7 +7,7 @@ if (temp<15):
 elif (temp>=15 and temp<=28):
     print("Warm")
 else:
-    print("Hot")
+    print("Hot") 
 
 #2. Receipt loop
 

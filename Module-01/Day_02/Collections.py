@@ -7,6 +7,7 @@ cities.append("Debrebirhan")
 cities.insert(3, "Wolkite")
 cities.remove("Adama")
 #print(cities)
+
 for city in cities:
     print (cities)
 
