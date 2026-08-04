@@ -1,0 +1,176 @@
+<!-- 1. Ethio telecom registration form -->
+
+<h2>Ethio telecom registration form</h2>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration form</title>
+  </head>
+  <body>
+    <form action="#" method="POST">
+      <p>
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" required />
+      </p>
+
+      <p>
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" required />
+      </p>
+
+      <p>
+        <label for="phone">Phone number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="^(09|\+251)[0-9]{8}"
+          placeholder="+251-9/09-11223344"
+          required
+        />
+      </p>
+
+      <p>
+        <label for="branch">Branch</label>
+        <select id="branch" name="branch" required>
+          <option value="">Select a Branch</option>
+          <option value="bole">Bole</option>
+          <option value="kazanchis">Kazanchis</option>
+          <option value="piassa">Piassa</option>
+        </select>
+      </p>
+
+      <button type="submit">Submit</button><br /><br />
+
+      <!-- 2. Ethiopian airlines flight table -->
+
+      <table id="airline-table">
+        <caption font-size="40px">
+          Ethiopian airlines flight schedule
+        </caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Flight</th>
+            <th scope="col">From</th>
+            <th scope="col">To</th>
+            <th scope="col">Departs</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>ET101</td>
+            <td>Addis Ababa</td>
+            <td>Lalibela</td>
+            <td>08:00 AM</td>
+            <td>3,500 ETB</td>
+          </tr>
+          <tr>
+            <td>ET102</td>
+            <td>Addis Ababa</td>
+            <td>Gondar</td>
+            <td>10:30 AM</td>
+            <td>3,800 ETB</td>
+          </tr>
+          <tr>
+            <td>ET103</td>
+            <td>Addis Ababa</td>
+            <td>Hawassa</td>
+            <td>01:15 PM</td>
+            <td>2,900 ETB</td>
+          </tr>
+          <tr>
+            <td>ET104</td>
+            <td>Addis Ababa</td>
+            <td>Bahir Dar</td>
+            <td>04:00 PM</td>
+            <td>3,600 ETB</td>
+          </tr>
+          <tr>
+            <td>ET105</td>
+            <td>Addis Ababa</td>
+            <td>Dire Dawa</td>
+            <td>06:30 PM</td>
+            <td>4,100 ETB</td>
+          </tr>
+        </tbody>
+      </table>
+      <br /><br />
+
+      <!-- 3. Media block -->
+
+      <h2>Image and map</h2>
+
+      <figure>
+        <img
+          width="200"
+          height="200"
+          src="lalibela.jpg"
+          alt="The rock-hewn Church of Saint George in Lalibela"
+        />
+        <figcaption>
+          The famous rock-hewn Church of St. George in Lalibela, Ethiopia.
+        </figcaption>
+      </figure>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d329.84421112127336!2d39.041118798859905!3d12.031645533404228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slalibela%20churches!5e0!3m2!1sen!2set!4v1785780740274!5m2!1sen!2set"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe
+      ><br /><br />
+
+      <!-- 4. The inaccessible snippnet -->
+
+      <form action="#" method="GET">
+        <label for="site-search">Search this website</label><br /><br />
+        <input
+          type="search"
+          id="site-search"
+          name="q"
+          placeholder="Search..."
+        />
+        <button type="submit">Search</button>
+      </form>
+      <br />
+
+      <div>
+        <span aria-hidden="true">⭐</span>
+        <span>Featured Content</span>
+      </div>
+      <br />
+
+      <div>
+        <p>Ethiopian airlines wins the Best airline in Africa award.</p>
+        <a
+          href="#news"
+          aria-label="Read more about Ethiopian airlines winning the Africa award"
+          >Read more</a
+        >
+      </div>
+
+      <!-- 5. SEO and metadata -->
+
+      <meta
+        name="description"
+        content="Ethiopian Airlines flight schedules and registrations."
+      />
+
+      <meta property="og:title" content="Ethiopian Flight Portal" />
+      <meta
+        property="og:description"
+        content="Check local flights and sign up today."
+      />
+    </form>
+  </body>
+</html>
