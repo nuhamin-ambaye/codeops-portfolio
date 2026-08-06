@@ -1,0 +1,89 @@
+/* 1. Navbar with flexbox */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 2. Row for four cards by flexbox */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 3. Photo gallary with grid */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.photo {
+  background-color: lightcoral;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 4. Layout with grid template areas */
+
+.grid-layout {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  height: 100vh;
+}
+
+.header { grid-area: header; background: lightgray; padding: 20px; }
+.sidebar { grid-area: sidebar; background: lightblue; padding: 20px; }
+.main { grid-area: main; background: white; padding: 20px; }
+.footer { grid-area: footer; background: lightgray; padding: 20px; }
+
+/* 5. Absolute positioning */
+
+.card-box {
+  position: relative;
+  width: 300px;
+  padding: 30px 20px 20px 20px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 8px;
+}
