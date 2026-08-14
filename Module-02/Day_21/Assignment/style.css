@@ -1,0 +1,31 @@
+:root {
+    --primary-color: rgb(86, 72, 187);
+    --secondary-color: rgb(16, 38, 70);
+}
+
+#sign-in {
+    background-color: var(--primary-color);
+    border: 3px solid var(--secondary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 50px auto;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+
+#submit {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+#submit:hover {
+    background-color: hsl(216, 49%, 8%);
+}
