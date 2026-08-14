@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register here</title>
+</head>
+<body>
+    <form id="sign-in">
+        <h1>Registration form</h1>
+        <p>
+            <label for="full_name">Full name</label>
+            <input
+                id="full_name"
+                type="text"
+                placeholder="Abebe Kebede"
+            />
+        </p>
+        <p>
+            <label for="phone_number">Phone number</label>
+            <input
+                id="phone_number"
+                type="tel"
+                placeholder="0911223344"
+            />
+        </p>
+        <p id="error-message"></p>
+        <button id="submit" type="submit">Submit</button>
+        <p id="current-count"></p>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
