@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f8fafc;
+    color: #1e293b;
+    border-radius: 12px;
+}
+
+#convert-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input, select, button {
+    font-family: inherit;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+button[type="submit"] {
+    background-color: #10b981;
+    color: white;
+    border: none;
+}
+
+#watch {
+    background-color: #ffffff;
+}
+
+#watchlist {
+    list-style: none;
+    padding: 0;
+}
+
+#watchlist li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+    margin-top: 0.4rem;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.rm {
+    border: none;
+    background: none;
+    color: #ef4444;
+}
