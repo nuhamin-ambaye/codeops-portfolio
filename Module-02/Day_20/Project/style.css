@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.fact-item {
+  margin-bottom: 8px;
+}
+
+.flag {
+  width: 120px;
+  display: block;
+  margin-bottom: 12px;
+}
