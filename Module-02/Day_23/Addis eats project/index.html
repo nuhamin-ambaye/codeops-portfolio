@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addis eats</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- search icon -->
+    <!-- heart icon(filled and empty) -->
+</head>
+
+<body>
+<div id="body-wrapper">
+    <header>
+        <nav id="nav-bar">
+            <div class="logo-image">
+                <img src="/Module-02/Day_23/Pictures/Addis%20eats%20logo.png" alt="Addis eats logo" class="logo-image">
+            </div>
+            
+            <h3>Addis eats</h3>
+            <div id="navs">
+                <a href="#Home">Home</a>
+                <a href="#Menu">Menu</a>
+                <a href="#Favorites">Favorites</a>
+                <a href="#About">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div id="hero-card">
+            <h1>Delicious Ethiopian food, <br>made for you</h1>
+            <p>Discover authentic Ethiopian dishes and order <br>your favorites with Addis Eats.</p><br>
+            <a id="hero-btn" class="btn" href="#Menu">Explore menu</a> 
+        </div>
+    </section>
+    
+    <section id="menu-and-search">
+        <h2>Our menu</h2>
+        <input type="text" id="search-bar" placeholder="Search dishes">
+    </section>
+<section id="menu-and-cart">
+    <div id="menu">
+
+    <div class="menu-card">
+        <div class="tags">
+            <span class="gray-badge">Main</span>
+            <span class="red-badge">Spicy</span>
+        </div>
+        <div>
+            <h3>Doro wot</h3>
+            <p>Spicy chicken stew slowly simmered in a rich berbere sauce, served with a hard-boiled egg.</p>
+            <h3 class="price">240 ETB</h3>
+            <button class="order-btn">Order</button>
+        </div>
+    </div>
+
+    <div class="menu-card">
+        <div class="tags">
+            <span class="gray-badge">Vegetarian</span>
+        </div>
+        <div>
+            <h3>Shiro Tegabino</h3>
+            <p>Rich, thick chickpea stew served bubbling hot in a traditional clay pot.</p>
+            <h3 class="price">150 ETB</h3>
+            <button class="order-btn">Order</button>
+        </div>
+    </div>
+
+    <div class="menu-card">
+        <div class="tags">
+            <span class="gray-badge">Main</span>
+            <span class="red-badge">Spicy</span>
+        </div>
+        <div>
+            <h3>Kitfo</h3>
+            <p>Minced raw beef, marinated in mitmita and niter kibbeh. Served with ayib.</p>
+            <h3 class="price">300 ETB</h3>
+            <button class="order-btn">Order</button>
+        </div>
+    </div>
+
+    <div class="menu-card">
+        <div class="tags">
+            <span class="gray-badge">Main</span>
+        </div>
+        <div>
+            <h3>Tibis</h3>
+            <p>Sauteed meat chunks with onions, peppers, and rosemary.</p>
+            <h3 class="price">280 ETB</h3>
+            <button class="order-btn">Order</button>
+        </div>
+    </div>
+</div>
+
+<div id="cart">
+    <h2>Your order</h2>
+    <dl class="ur-order">
+        <dt>Doro wot</dt>
+        <dd>2*240 ETB</dd>
+        <dd><button class="remove-btn">Remove</button></dd>
+    </dl>
+    <dl class="ur-order">
+        <dt>Shiro tegabino</dt>
+        <dd>1*150 ETB</dd>
+        <dd><button class="remove-btn">Remove</button></dd>
+    </dl>
+
+    <div id="total">
+        <h3 class="total-label">Total:</h3>
+        <h3 class="total-price">600 ETB</h3>
+    </div>
+    <button id="pay-btn">PAY</button>
+</div>
+</section>
+<script src="script.js"></script>
+
+<footer id="footer">
+    <p id="addiseats-footer"><a href="#Home"><strong>Addis eats</strong></a></p>
+    <p>&copy;2026 Addis Eats. Reimaging Ethiopian culinary heritage</p>
+    <div id="footer-links" ></div>
+    <a href="#">Privacy policy</a>
+    <a href="#">Terms of service</a>
+    <a href="mailto:addiseats@gmail.com">Contact us</a>
+</footer>
+</div>
+</body>
+</html>
