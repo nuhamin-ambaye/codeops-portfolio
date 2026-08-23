@@ -1,6 +1,6 @@
 const form = document.querySelector("#add-form");
-const nameInput = document.querySelector("#name");
-const priceInput = document.querySelector("#price");
+const nameInput = document.querySelector("#add-form input[type='text']");
+const priceInput = document.querySelector("#add-form input[type='number']");
 const list = document.querySelector("#list");
 const totall = document.querySelector("#total");
 
@@ -31,7 +31,7 @@ function addRow(n, p) {
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     
-    const n = nameInput.value;
+    const n = nameInput.value.trim();
     const p = Number(priceInput.value);
     
     if (!n || !p) return;
@@ -45,7 +45,10 @@ list.addEventListener("click", (e) => {
     if (e.target.matches(".del")) {
         e.target.closest("li").remove();
         updateTotal();
-    } else if (e.target.matches("li")) {
-        e.target.classList.toggle("bought");
+    } else {
+        const li = e.target.closest("li");
+        if (li) {
+            li.classList.toggle("bought");
+        }
     }
 });

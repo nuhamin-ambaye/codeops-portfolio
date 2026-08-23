@@ -1,31 +1,71 @@
-:root {
-    --primary-color: rgb(86, 72, 187);
-    --secondary-color: rgb(16, 38, 70);
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px 20px;
 }
 
 #sign-in {
-    background-color: var(--primary-color);
-    border: 3px solid var(--secondary-color);
-    color: white;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 320px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    margin: 50px auto;
-    background-color: var(--primary-color);
-    border-radius: 8px;
+}
+
+#sign-in h1 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#sign-in p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#error-message {
+    color: red;
+    font-size: 13px;
+    margin: 10px 0;
 }
 
 #submit {
-    background-color: var(--secondary-color);
+    width: 100%;
+    background-color: rgb(86, 72, 187);
     color: white;
     border: none;
     padding: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 #submit:hover {
-    background-color: hsl(216, 49%, 8%);
+    background-color: rgb(65, 52, 150);
+}
+
+#current-count {
+    font-size: 13px;
+    color: #555;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
 }

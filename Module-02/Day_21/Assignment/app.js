@@ -1,10 +1,14 @@
 "use strict";
-const phonePattern = /^(?:\+251|0)9\d{8}$/;
+const phonePattern = /^(?:\+251|0)[79]\d{8}$/;
 const form = document.getElementById("sign-in");
 const fullNameInput = document.getElementById("full_name");
 const phoneNumberInput = document.getElementById("phone_number");
 const errorMsgArea = document.getElementById("error-message");
 const currentCountArea = document.getElementById("current-count");
+
+function updateCountDisplay() {
+  currentCountArea.textContent = "Current Count: " + users.length;
+}
 
 // 5. Restoration
 let savedData = localStorage.getItem("users");
@@ -14,7 +18,7 @@ if (savedData) {
   users = JSON.parse(savedData);
 }
 
-currentCountArea.textContent = "Current Count: " + users.length;
+updateCountDisplay();
 
 // 1. Submission Control and displaying
 form.addEventListener("submit", function (event) {
@@ -49,6 +53,9 @@ form.addEventListener("submit", function (event) {
 
   users.push(newUser);
   localStorage.setItem("users", JSON.stringify(users));
+  
+  updateCountDisplay();
+  
   form.reset();
   console.log("Current user count:", users.length);  
 });
