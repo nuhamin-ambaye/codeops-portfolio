@@ -44,7 +44,7 @@ function renderMenu() {
     }
 
     filteredDishes.forEach(dish => {
-        const card = document.createElement("article");
+        const card = document.createElement("div");
         card.className = "menu-card";
         card.dataset.id = dish.id;
 
@@ -120,6 +120,10 @@ if (menuEl) {
         } else {
             state.cart.push({ ...dish, qty: 1 });
         }
+
+        if (cartErrorMsgArea) {
+            cartErrorMsgArea.textContent = "";
+        }
         
         save();
         renderCart();
@@ -152,6 +156,99 @@ if (cartEl) {
 
 function cartTotal() {
     return state.cart.reduce((sum, i) => sum + ((i.price || 0) * (i.qty || 1)), 0);
+}
+
+const cartErrorMsgArea = document.getElementById("cart-error-message");
+
+const checkoutBtn = document.querySelector("#checkout-btn");
+const checkoutFormContainer = document.querySelector("#checkout-form");
+const orderForm = document.querySelector("#form");
+
+const fnameInput = document.getElementById("fname");
+const lnameInput = document.getElementById("lname");
+const phoneInput = document.getElementById("pnumber");
+const emailInput = document.getElementById("email");
+
+const fnameError = document.getElementById("fname-error");
+const lnameError = document.getElementById("lname-error");
+const pnumberError = document.getElementById("pnumber-error");
+const emailError = document.getElementById("email-error");
+
+const PHONE_PATTERN = /^(?:\+251|0)9\d{8}$/;
+const EMAIL_PATTERN = /^[\w.]+@[\w.]+\.\w+$/;
+
+const successModal = document.querySelector("#success-modal");
+const modalCloseBtn = document.querySelector("#modal-close-btn");
+
+if (checkoutBtn) {
+    checkoutBtn.addEventListener("click", () => {
+        if (state.cart.length === 0) {
+            if (cartErrorMsgArea) {
+                cartErrorMsgArea.textContent = "Add some dishes first.";
+            }
+            return;
+        }
+
+        if (cartErrorMsgArea) {
+            cartErrorMsgArea.textContent = "";
+        }
+
+        if (checkoutFormContainer) {
+            checkoutFormContainer.style.display = "block";
+        }
+    });
+}
+
+if (orderForm) {
+    orderForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        fnameError.textContent = "";
+        lnameError.textContent = "";
+        pnumberError.textContent = "";
+        emailError.textContent = "";
+
+        const fnameValue = fnameInput.value.trim();
+        const lnameValue = lnameInput.value.trim();
+        const phoneValue = phoneInput.value.trim();
+        const emailValue = emailInput.value.trim();
+        let isValid = true;
+
+        if (fnameValue.length < 2) {
+            fnameError.textContent = "First name must be atleast 2 characters long.";
+            isValid = false;
+        }
+
+        if (lnameValue.length < 2) {
+            lnameError.textContent = "Last name must be atleast 2 characters long.";
+            isValid = false;
+        }
+
+        if (!PHONE_PATTERN.test(phoneValue)) {
+            pnumberError.textContent = "Enter a valid Ethiopian phone number<br>(e.g., 0912345678 or +251912345678).";
+            isValid = false;
+        }
+
+        if (!EMAIL_PATTERN.test(emailValue)) {
+            emailError.textContent = "Enter a valid email address.";
+            isValid = false;
+        }
+
+        if (!isValid) return;
+        
+        if (cartErrorMsgArea) cartErrorMsgArea.textContent = "";
+
+        alert("Order Successful!\n\nYour delicious Ethiopian meal is on its way. Thank you for ordering with Addis Eats!");
+
+        state.cart = [];
+        save();
+        renderCart();
+
+        orderForm.reset();
+        if (checkoutFormContainer) {
+            checkoutFormContainer.style.display = "none";
+        }
+    });
 }
 
 function save() {

@@ -47,27 +47,53 @@
 
             </section>
 
-            <aside id="cart">
-                <h2>Your order</h2>
+            <aside id="cart-and-cktform">
+                <div id="cart">
+                    <h2>Your order</h2>
+                    <p id="cart-error-message"></p>
+                    <div id="cart-items"></div>
 
-                <div id="cart-items"></div>
-
-                <div id="total">
-                    <h3 class="total-label">Total:</h3>
-                    <h3 class="total-price" id="cart-total-val">0 ETB</h3>
+                    <div id="total">
+                        <h3 class="total-label">Total:</h3>
+                        <h3 class="total-price" id="cart-total-val">0 ETB</h3>
+                    </div>
+                    <button id="checkout-btn">CHECKOUT</button>
                 </div>
-                <button id="pay-btn">PAY</button>
+
+                <div id="checkout-form">
+                    <form id="form" novalidate>
+                        <h2>Confirmation details</h2>
+                        <div id="name-row">
+                            <div class="input-grp">
+                                <input id="fname" type="text" placeholder="First name">
+                                <p id="fname-error" class="error-msg"></p>
+                            </div>
+                            <div class="input-grp">
+                                <input id="lname" type="text" placeholder="Last name">
+                                <p id="lname-error" class="error-msg"></p>
+                            </div>
+                        </div>
+                        <input id="pnumber" type="tel" placeholder="(+251/0)911223344">
+                        <p id="pnumber-error" class="error-msg"></p>
+                        <input id="email" type="email" placeholder="abebekebede@gmail.com">
+                        <p id="email-error" class="error-msg"></p>
+                        <button id="confirm-btn" type="submit">CONFIRM</button>
+                    </form>
+                </div>
             </aside>
         </div>
     </main>
 
     <footer id="footer">
         <p>&copy;2026 Addis Eats.</p>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="mailto:addiseats@gmail.com">Contact us</a>
+        <div id="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="mailto:addiseats@gmail.com">Contact us</a>
+        </div>
     </footer>
 </div>
+
 <script src="app.js"></script>
 </body>
 </html>
