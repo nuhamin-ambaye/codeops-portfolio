@@ -51,7 +51,7 @@ const updatedCustoomer = {
   phone: "0912345678"
 };
 
-console.log(updatedCustomer);
+console.log(updatedCustoomer);
 console.log(custoomer);
 
 // 5. Spliting program (money.js and app.js)
