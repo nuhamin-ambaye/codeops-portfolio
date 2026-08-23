@@ -42,6 +42,10 @@
             margin-top: 80px;
         }
 
+        #footer p{
+            font-size: small;
+        }
+
         #footer-links {
             display: flex !important;
             flex-direction: row !important;
@@ -56,8 +60,26 @@
         }
 
         #footer-links a:hover {
-            color: #30b400;
+            color: #30b400 !important;
         }
+
+        @media (max-width: 600px) {
+            #footer {
+                flex-direction: row !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+                gap: 10px;
+                font-size: x-small;
+            }
+
+            #footer-links {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: nowrap !important;
+                gap: 10px !important;
+            }
+
+    }
     </style>
 </head>
 <body>
