@@ -225,7 +225,7 @@ if (orderForm) {
         }
 
         if (!PHONE_PATTERN.test(phoneValue)) {
-            pnumberError.textContent = "Enter a valid Ethiopian phone number<br>(e.g., 0912345678 or +251912345678).";
+            pnumberError.textContent = "Enter a valid Ethiopian phone number (e.g., 0912345678 or +251912345678).";
             isValid = false;
         }
 
