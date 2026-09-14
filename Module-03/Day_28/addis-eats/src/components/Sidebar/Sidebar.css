@@ -1,0 +1,128 @@
+.sidebar {
+  background-color: #ffffff;
+  width: 280px;
+  min-width: 280px;
+  padding: 24px 20px;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.sidebar-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.sidebar-desc {
+  font-size: 0.85rem;
+  color: #4b5563;
+  line-height: 1.45;
+}
+
+.section-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: #9ca3af;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.perks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.perks-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.perk-icon {
+  font-size: 1.25rem;
+  background: #fef3c7;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.perks-list li div {
+  display: flex;
+  flex-direction: column;
+}
+
+.perks-list li strong {
+  font-size: 0.88rem;
+  color: #1f2937;
+}
+
+.perks-list li small {
+  font-size: 0.78rem;
+  color: #6b7280;
+}
+
+.telebirr-card {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.telebirr-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1d4ed8;
+  font-size: 0.92rem;
+  margin-bottom: 6px;
+}
+
+.telebirr-card p {
+  font-size: 0.8rem;
+  color: #3b82f6;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.hours-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.hours-time {
+  font-size: 0.85rem;
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.status-open {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #059669;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 16px;
+  }
+}
