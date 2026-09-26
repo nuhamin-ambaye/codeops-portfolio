@@ -1,0 +1,30 @@
+.category-bar {
+    display: flex;
+    gap: 10px;
+    margin: 16px 0;
+    flex-wrap: wrap;
+}
+
+.chip {
+    padding: 8px 18px;
+    border-radius: 9999px;
+    border: 1.5px solid var(--border-color);
+    background-color: #fffaf4;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.chip:hover {
+    background-color: var(--primary-light);
+    border-color: var(--primary);
+}
+
+.chip.on {
+    background-color: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(196, 92, 38, 0.35);
+}
