@@ -1,0 +1,28 @@
+### Get all dishes
+GET http://localhost:3000/api/dishes
+
+### Get dish by id
+GET http://localhost:3000/api/dishes/1
+
+### Get dishes by restaurant
+GET http://localhost:3000/api/dishes?restaurantId=1
+
+### Create dish
+POST http://localhost:3000/api/dishes
+Content-Type: application/json
+
+{
+    "name": "Doro Wat",
+    "priceSantim": 85000,
+    "restaurantId": 1
+}
+
+### Create dish with missing restaurant
+POST http://localhost:3000/api/dishes
+Content-Type: application/json
+
+{
+    "name": "Kitfo",
+    "priceSantim": 90000,
+    "restaurantId": 999
+}
